@@ -37,7 +37,7 @@ skip_box.move_ip(700, 270)
 def draw():
     global marquee_message
 
-    screen.clear()
+screen.clear()
     screen.fill(color="black")
 
     screen.draw.filled_rect(marquee_box, "black")
@@ -48,4 +48,45 @@ def draw():
     marquee_message = "welcome to poop master"
     marquee_message += f"Q: {question_index} of {question_count}"
     screen.draw.textbox(marquee_message, marquee_box, color="white")
-                                                                                                                                                                                                                                        
+#wooewrwreiwriewporpwoirwpoeriwoperweriwepoirpweorpoweirwpeoirpweoirpoweirpweirpweirpoweirpoweirpweirpweirpweiprweiprweiprewipriewpriewpriewpirepwoirewpirweporiweporiweporiwpoirrrtatatatatatasahurchimpanzinibanananinintortuginitralaleotralalaorcaleroorcalacocofantoelephantobombardirocroccodlilotrumilerotrulichinaballerinacapuchinalililiralilaespersonosinora
+screen.draw.textbox(
+    str(time_left),
+    timer_box,
+    color="white",
+    shadow=(0.5, 0.5)
+    scolor="black"
+)
+
+screen.draw.textbox("skip", skip_box, color="white", angle=-90)
+
+screen.draw.textbox(
+    question[0].strip(),
+    question_box,
+    color="white",
+    shadow=(0.5, 0.5),
+    scolor="black"
+)
+
+index = 1
+for answer_box in answer_boxes:
+    screen.draw.textbox(question[index].strip(), answer_box, color="black",)
+def update():
+    move_marquee() 
+
+def move_marquee():
+    marquee_box.x -= 2
+    if marquee_box.right < 0:
+        marquee_box.left = WIDTH
+
+def read_questions_file():
+    global question_count, questions
+    with open(question_file_name, "r") as q_file:
+        for q in q_file:
+            questions.append(q)
+            question_count += 1
+def read_next_question():
+    global question_index,
+    if question_index < len(questions):
+        q = questions[question_index]
+        question_index += 1
+        return q.split(",")
