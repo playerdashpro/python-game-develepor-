@@ -1,0 +1,11 @@
+*{
+    margin: 0 ;
+}
+body {
+    background: #1e0303;
+    color: white;
+    text-align: center;
+}
+img {
+    padding: 100px;
+}
