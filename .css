@@ -1,0 +1,31 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+text-align: center;
+background: #fff;
+color: #000;
+font-family: 'Hubballi', cursive;
+}
+header{
+    font-size: 40px;
+    font-variant: small-caps;
+    margin: 20px 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
