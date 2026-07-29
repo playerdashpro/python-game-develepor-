@@ -29,3 +29,20 @@ div{
     width: 100%;
     padding: 20px;
 }
+img{
+    width: 180px;
+    height: 180px;
+    box-shadow: 4px 4px 10px
+    #7e6b6b;
+
+    }
+
+    img:Hover{
+        transform:scale(2,2);
+        border-radius:50%;
+    }
+
+    footer{
+        color:#A0A0A0;
+        margin: bottom 15px;
+    }
