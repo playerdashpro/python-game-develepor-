@@ -14,7 +14,7 @@ h1 {
 
     text-align:center;
     color: white;
-    background color: #2f3640;
+    background-color: #2f3640;
     padding: 10px;
     font-size: 36px;
 
@@ -91,12 +91,12 @@ button:hover{
     left: 20px;
 
  }
- .cloud1 {
+.cloud1 {
     top: 55px;
     left: 15%;
     
  }
- .cloud2 {
+.cloud2 {
     top: 100px;
 
     left: 50%;
@@ -159,13 +159,13 @@ button:hover{
                 white 0px,
                 white 15px
                 transparent 15px,
-                transparent 25px}
-            );
+                transparent 25px
+            )
         }
-    .finish-line{
-        postion: absolute:
+.finish-line{
+        position: absolute:
         top: 0;
-        right 8%;
+        right: 8%;
         width: 50px;
         height: 100%;
         z-index: 10;

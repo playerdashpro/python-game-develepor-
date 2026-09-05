@@ -24,7 +24,7 @@ startButton.style.display = "none";
 });
 
 car1.addEventListener(
-"animationend"
+"animationend",
 carFinished
 
 );
@@ -37,15 +37,16 @@ carFinished
 
 car3.addEventListener(
 "animationend",
-carFinished 
+carFinished
+);
 
-funcrtion carFinished() {
+function carFinished() {
 finishedCars++;
 if (finishedCars === 3) {
 restartButton.style.display = "block";
     }
 }
-restartbuttton.addEventListener("click", function() {
+restartButton.addEventListener("click", function() {
 game.classList.remove("racing");
 car1.style.transform = "translateX(0)";
 car2.style.transform = "translateX(0)";
